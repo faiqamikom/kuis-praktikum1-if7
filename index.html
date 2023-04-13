@@ -5,12 +5,33 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kuis Praktikum 1_IF07</title>
-	<link rel="stylesheet" href="css/css.css" />
+	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+	
 	<div class="layout">
-	<div class="calculator">
 
+	<div class="calculator">
+		<div class="display_top">
+			<div class="clock">
+				<span class="hour"></span>:<span class="minute"></span>
+				<script src="js/datentime.js"></script>
+			</div>
+			
+			<div class="logo">
+				<img src="img/logoamikomc.png" alt="logo" width="20" height="20">
+			  </div>
+		</div>
+		<!--
+		<div class="mode">
+			<link rel="stylesheet" href="css/button.css"/>
+			<label class="switch">
+				<input type="checkbox" id="mode-switch">
+				<span class="slider round"></span>
+			  </label>
+			  <script src="js/mode.js"></script>
+		</div>
+		-->
 		<div class="display">
 		<div class="content">
 			<div class="input"></div>
@@ -20,7 +41,7 @@
 
 		<div class="key_pad">
 			<div data-key="clear" class="key action"><span>AC</span></div>
-			<div data-key="pulus_minus" class="key action"><span>&pm;</span></div>
+			<div data-key="-" class="key action"><span>&pm;</span></div>
 			<div data-key="%" class="key action"><span>%</span></div>
 			<div data-key="/" class="key operator"><span>÷</span></div>
 
@@ -48,6 +69,6 @@
 	</div>
 	</div>
 
-	<script src="js/js.js"></script>
+	<script src="js/calculator.js"></script>
 </body>
 </html>
